@@ -7,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  //variables
+  //variables // not needed, to delete
 
   title = 'AnguBlog';
   author = 'Jakub Proszek'
 
-  constructor() { }
+  constructor() { }  // same
 
-  ngOnInit(): void {
+  ngOnInit(): void { // same
   }
 
 
 
-  // funkcje
+  // funkcje // same
 }

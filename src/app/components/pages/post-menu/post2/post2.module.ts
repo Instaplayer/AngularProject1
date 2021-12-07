@@ -1,19 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Post1Component } from './post1.component'
+import { Post2Component } from './post2.component'
 import { RouterModule, Routes } from '@angular/router';
-import { CommentsectionModule } from 'src/app/components/commentsection/commentsection.module';
+import { CommentsectionModule } from 'src/app/components/comment-section/comment-section.module';
 
 
 const routes: Routes = [
 
-  {path: '', component: Post1Component}
+  {path: '', component: Post2Component}
 
 ]
 
 @NgModule({
   declarations: [
-    Post1Component
+    Post2Component
   ],
 
   imports: [
@@ -22,4 +22,4 @@ const routes: Routes = [
     CommentsectionModule
   ]
 })
-export class Post1Module { }
+export class Post2Module { }

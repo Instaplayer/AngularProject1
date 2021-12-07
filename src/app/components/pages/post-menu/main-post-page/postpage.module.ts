@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import {MatListModule} from '@angular/material/list';
 import {MatDividerModule} from '@angular/material/divider';
 import { FormsModule } from '@angular/forms';
-import { CommentsectionModule } from '../../commentsection/commentsection.module';
+import { CommentsectionModule } from '../../../comment-section/comment-section.module'
 
 
 let id = 1;
@@ -13,8 +13,8 @@ let id = 1;
 var routes: Routes = [
 
     {path: '', component: PostpageComponent},
-    {path: '1',loadChildren: () => import('./post1/post1.module').then(n => n.Post1Module)},
-    {path: '2',loadChildren: () => import('./post2/post2.module').then(n => n.Post2Module)}
+    {path: '1',loadChildren: () => import('../post1/post1.module').then(n => n.Post1Module)},
+    {path: '2',loadChildren: () => import('../post2/post2.module').then(n => n.Post2Module)}
 
 ]
 

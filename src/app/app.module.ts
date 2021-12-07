@@ -43,8 +43,8 @@ import {MatInputModule} from '@angular/material/input';
     MatIconModule,
     MatInputModule,
     RouterModule.forRoot([
-      {path: 'main', loadChildren: () => import('./components/pages/mainpage/mainpage.module').then(n => n.MainpageModule)},
-      {path: 'components', loadChildren: () => import('./components/pages/postmenu/postpage.module').then(n => n.PostpageModule)},
+      {path: 'main', loadChildren: () => import('./components/pages/main-page/mainpage.module').then(n => n.MainpageModule)},
+      {path: 'components', loadChildren: () => import('./components/pages/post-menu/main-post-page/postpage.module').then(n => n.PostpageModule)},
       {path:'',redirectTo:'main', pathMatch: 'full' },
     ]),
     BrowserAnimationsModule,

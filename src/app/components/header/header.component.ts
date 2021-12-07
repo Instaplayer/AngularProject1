@@ -10,11 +10,11 @@ export class HeaderComponent implements OnInit {
   title = `Angublog`
 
   links = ['main', 'components'];
-  activeLink = this.links[0];
+  activeLink = this.links[0]; // im not sure if thats a good idea. maybe it would be better to set the active link in the constructor
 
-  constructor() { }
+  constructor() { } // to delete if not used
 
-  ngOnInit(): void {
+  ngOnInit(): void { //same
   }
 
 }

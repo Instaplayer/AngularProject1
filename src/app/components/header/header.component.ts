@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  title = `Angublog`
+  title = `AnguBlog`
 
   links = ['main', 'components'];
   activeLink = this.links[0];

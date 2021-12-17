@@ -1,8 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { Post2Component } from './post2.component';
 
-describe('Subpage1s1Component', () => {
+describe('Post2Component', () => {
   let component: Post2Component;
   let fixture: ComponentFixture<Post2Component>;
 
@@ -22,4 +21,8 @@ describe('Subpage1s1Component', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should render comment section',()=>{
+    expect(document.getElementsByTagName("app-commentsection")).toBeTruthy();
+  })
 });
